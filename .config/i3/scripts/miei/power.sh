@@ -45,7 +45,6 @@ charging_color="${CHARGING_COLOR:-#00AFE3}"
 full_color="${FULL_COLOR:-#FFFFFF}"
 ac_color="${AC_COLOR:-#535353}"
 
-
 while getopts 1:2:3:4:5:6:7:8:c:f:a:h opt; do
     case "$opt" in
         1) dis_colors[0]="$OPTARG";;

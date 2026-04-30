@@ -40,12 +40,8 @@ else
 fi
 }
 
-
-
-
 if [ -f $path ]
 then
-
 
 	mode=$(sed '1!d' $path)
 	current=$(sed '2!d' $path)
@@ -62,7 +58,6 @@ then
 	echo $(date +%s) >> $path		
 	fi
 
-
 	if [ $mode == "m" ];then
 	modifica
 	fi
@@ -70,8 +65,6 @@ then
 	if [ $mode == "w" ];then
 	timer	
 	fi
-
-
 
 else
 echo m > $path 
